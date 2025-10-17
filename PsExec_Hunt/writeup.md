@@ -4,9 +4,8 @@
 Investigate lateral movement using PsExec based on Windows event logs.
 
 ## 🧠 Tools Used
+- Wireshark (Mostly)
 - Event Viewer
-- Chainsaw
-- Sigma rules
 - PowerShell (Get-WinEvent)
 
 ## 🔍 Key Steps
@@ -26,5 +25,4 @@ Next steps: block attacker IP, rotate admin credentials, and add detections for 
 
 ---
 
-**Screenshots:**  
-( add these soon!)  
+  

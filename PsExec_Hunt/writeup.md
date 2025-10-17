@@ -1,28 +1,31 @@
-# 🧩 Lab: PsExec Hunt
+# 🧩 Lab: PsExec Hunt (Network Forensics)
 
-## 🎯 Objective
-Investigate lateral movement using PsExec based on Windows event logs.
+## 📘 Summary
+- **Platform:** CyberDefenders  
+- **Category:** Network Forensics  
+- **Tactics:** Execution, Defense Evasion, Discovery, Lateral Movement  
+- **Tool(s):** Wireshark (primary), tshark (optional), NetworkMiner (optional)  
+- **Difficulty:** Easy  
+- **Estimated Time:** 30 mins
 
-## 🧠 Tools Used
-- Wireshark (Mostly)
-- Event Viewer
-- PowerShell (Get-WinEvent)
+**Scenario:** An IDS flagged suspicious lateral movement involving PsExec. Use the provided PCAP to trace attacker activity, identify entry point(s), compromised hosts, credentials (if present), and administrative share usage.
 
-## 🔍 Key Steps
-1. Filtered logs for Event IDs: **7045**, **4624**, **4688**, **5140**  
-2. Found `PSEXESVC` service creation — indicates PsExec use.  
-3. Checked nearby logons and network share events to confirm remote execution.  
-4. Built a short timeline showing attacker activity.  
+## 🛠️ Tools & Useful Filters / Commands
 
-## 🧾 Findings
-- Attacker used PsExec for remote code execution.  
-- Evidence in Event ID 7045 (service install), 4624 (network logon), and 4688 (process creation).  
-- Attack path: `Remote logon → service creation → PsExec execution`.  
+### Wireshark (GUI)
+- Open the PCAP in Wireshark.
+- Useful display filters:
+  - `smb || smb2` — show SMB/SMB2 protocol traffic (file/share activity).
+  - `tcp.port == 445` — raw SMB over TCP.
+  - `ntlmssp` or `smb.ntlmssp` — show NTLM authentication messages (username, domain info).
+  - `rpc || msrpc` — RPC calls (useful for service control / svcctl calls).
+  - `smb2.cmd == 1 || smb2.cmd == 5` — (optional) show specific SMB2 command types (create/open/write).  
+  - `frame.time >= "YYYY-MM-DD HH:MM:SS"` — filter by time range if needed.
 
-## 🧩 Conclusion
-The host was compromised via PsExec lateral movement.  
-Next steps: block attacker IP, rotate admin credentials, and add detections for service creation events.
+- Helpful GUI actions:
+  - **Follow → TCP Stream** on suspicious TCP connections to view the entire session.  
+  - **Analyze → Display Filter Macros** (useful to save filters).  
+  - **File → Export Objects → SMB** to extract any files transferred over SMB.  
+  - Inspect **NTLMSSP** challenge/response details in packet details to identify usernames/domains.
 
----
 
-  

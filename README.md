@@ -9,4 +9,4 @@
 | 2 | [Tomcat Takeover](Tomcat_Takeover) | Analyze PCAP to identify Tomcat compromise: upload/exploit, webshell, C2 and post-exploitation activity | Easy | Wireshark, NetworkMiner |
 | 3 | [Crack the Hash]() | Identify and crack captured password hashes using Hashcat; document methods and findings | Easy | Hashcat, CrackStaion |
 | 4 | [XMLRat](XLMRat) | Analyze network traffic to identify malware delivery, deobfuscate scripts | Easy | Wireshark, Virustotal |
-
+| 5 | [IcedID Analysis](./IcedID/README.md) | Static & dynamic analysis of IcedID sample; extract C2 indicators and IOCs | Medium | VirusTotal, strings, YARA, Python, Wireshark |

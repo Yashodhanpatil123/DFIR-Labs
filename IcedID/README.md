@@ -23,5 +23,9 @@
 - Tria.ge
 - ANY.RUN
 
+
+##  Conclusion 
+  - its very easiy lab i really enjoyed it just go through virustotal and it will be very easy lab
+  - 
 ---
 

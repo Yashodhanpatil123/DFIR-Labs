@@ -10,3 +10,5 @@
 | 3 | [Crack the Hash]() | Identify and crack captured password hashes using Hashcat; document methods and findings | Easy | Hashcat, CrackStaion |
 | 4 | [XMLRat](XLMRat) | Analyze network traffic to identify malware delivery, deobfuscate scripts | Easy | Wireshark, Virustotal |
 | 5 | [IcedID Analysis](./IcedID/README.md) | Static & dynamic analysis of IcedID sample; extract C2 indicators and IOCs | Medium | VirusTotal, strings, YARA, Python, Wireshark |
+| 6 | [Disk Analysis & Autopsy](./Disk_Analysis_&_Autopsy/README.md) | Use Autopsy to investigate rtifacts of Disk image | Medium | Autopsy |
+

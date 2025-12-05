@@ -1,6 +1,7 @@
 # 📘 Lab - Web Investigation 
 <img width="484" height="276" alt="image" src="https://github.com/user-attachments/assets/9fb2574b-2657-4929-958a-f8c174ef2c94" />
 
+Room link : https://cyberdefenders.org/blueteam-ctf-challenges/web-investigation/
 
 ## Scenario - 
 You are a cybersecurity analyst working in the Security Operations Center (SOC) of BookWorld, an expansive online bookstore renowned for its vast selection of literature. BookWorld prides itself on providing a seamless and secure shopping experience for book enthusiasts around the globe. Recently, you've been tasked with reinforcing the company's cybersecurity posture, monitoring network traffic, and ensuring that the digital environment remains safe from threats.
@@ -9,9 +10,11 @@ As the lead analyst in this case, you are required to analyze the network traffi
 
 ---
 
-# Category: Network Forensics
-# Tactics: Initial Access,Persistence,Command and Control
-# Tools: Wireshark,Network Miner
+ **Category**: Network Forensics
+ **Tactics**: Initial Access,Persistence,Command and Control
+ **Tools**: Wireshark,Network Miner
 
 -----
+
+
 

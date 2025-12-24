@@ -14,4 +14,6 @@
 | 7 | [Web Investigation Lab](./Web_Investigation_Lab/README.md) | Examine the traffic investigate the web server compromise | Easy | Wireshark,Newtwork miner |
 | 8 | [3CX_Supply_Chain](./3CX_Supply_Chain/README.md) | Threat intel analysis of the 3CX supply-chain compromise | Easy | VirusTotal |
 | 9 | [Red Stealer](./Red_Stealer/README.md) | Analyze suspicious executable to extract IOCs, identify C2 infra, and map MITRE ATT&CK techniques | Easy | VirusTotal, MalwareBazaar, ThreatFox, ANY.RUN, Whois |
+| 10 | [Reveal Lab](./Reveal/README.md) | Memory forensics investigation of a compromised workstation using Volatility 3 | Easy | Volatility 3 |
+
 

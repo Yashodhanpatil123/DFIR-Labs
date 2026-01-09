@@ -1,8 +1,26 @@
 <img width="1903" height="509" alt="image" src="https://github.com/user-attachments/assets/3087952b-d64b-49e5-a24b-4abec776c517" />
 
-**LAB** - ##extracted
+🧪 TryHackMe – Extracted (Network Forensics)
 
 
-**Scenario**   - 
-*Working as a senior DFIR specialist brings a new surprise every day. Today, one of your junior colleagues raised an alarm that some suspicious traffic was generated from one of the workstations, but they couldn't figure out what was happening.
-Unfortunately, there was an issue with the SIEM ingesting the network traffic, but luckily, the network capture device was still working. They asked if you could look to find out what happened since you are known as The Magician around these parts.*
+📌 Lab Overview
+
+Extracted is a blue team DFIR challenge focused on analyzing a large network capture file (.pcapng) to investigate suspicious activity originating from a workstation. Due to SIEM ingestion failure, the investigation relies entirely on packet-level analysis to uncover attacker behavior.
+
+The objective of this lab is to identify malicious activity, extract relevant artifacts from network traffic, and understand how network forensics supports incident response.
+
+
+
+🧰 Tools Used -
+Wireshark,
+Windows Virtual Machine,
+PCAPNG file
+
+
+
+
+
+✅ Conclusion
+
+This lab demonstrated how network forensics can be used to investigate incidents when centralized logging fails. By analyzing raw packet data, meaningful evidence was extracted to reconstruct attacker activity and assess the scope of compromise. Network traffic analysis remains a vital component of DFIR investigations
+

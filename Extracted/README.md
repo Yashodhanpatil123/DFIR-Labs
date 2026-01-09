@@ -10,14 +10,20 @@ Extracted is a blue team DFIR challenge focused on analyzing a large network cap
 The objective of this lab is to identify malicious activity, extract relevant artifacts from network traffic, and understand how network forensics supports incident response.
 
 
+----------
 
 🧰 Tools Used -
 Wireshark,
 Windows Virtual Machine,
 PCAPNG file
 
+<img width="1704" height="576" alt="image" src="https://github.com/user-attachments/assets/8412da70-8f04-4202-be79-447549beeac3" />
 
 
+
+
+
+----------
 
 
 ✅ Conclusion

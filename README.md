@@ -1,4 +1,10 @@
 # DFIR-Labs
+## Labs Covered
+- Network Forensics
+- Malware Analysis
+- Disk & Memory Forensics
+- Threat Intelligence
+
 <img width="860" height="366" alt="image" src="https://github.com/user-attachments/assets/51c6f121-4b6c-4d6c-8f13-38fbc056b5f0" />
 
 ## 🧩 Labs Completed
